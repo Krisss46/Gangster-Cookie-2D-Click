@@ -7,13 +7,19 @@
 <body>
   <div>
     <h1>Cookie Counter: <span id="counter">0</span></h1>
+    <h2>Prestige: <span id="prestigeLevel">0</span></h2>
   </div>
   <div>
     <img id="cookieImg" src="https://cdn.discordapp.com/attachments/876434460143386706/1135679001894060172/admin-ajax-e1683055362193.png"/>
   </div>
   <div>
+    <div>
+    <button id="shopBtn" onclick="openShop()">Shop (unlock at prestige 1)</button>
+    </div>
+    <div>
     <button id="cookieBtn" onclick="upgradeCookie()">Upgrade cookie for <span id="price">100</span></button>
-    <button id="resetBtn" onclick="resetGame()">Reset</button>
+    <button id="resetBtn" onclick="confirmReset()">Reset</button>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
